@@ -77,7 +77,7 @@ services:
       - caddy
     labels:
       caddy: compreface.home.int
-      caddy.reverse_proxy: "{{ upstreams 8000 }}"
+      caddy.reverse_proxy: "{{upstreams 8000}}"
       caddy.import: https-proxy
 
   compreface-core:
